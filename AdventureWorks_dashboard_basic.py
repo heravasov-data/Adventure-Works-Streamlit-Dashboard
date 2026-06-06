@@ -6,7 +6,7 @@ from pathlib import Path
 st.set_page_config(page_title="AdventureWorks Dashboard", layout="wide")
 
 # ── Data ─────────────────────────────────────────────────────────────────────
-BASE = Path(r"C:\Users\ShamilHeravasovNovum\Desktop\sample data")
+BASE = Path(__file__).parent
 
 @st.cache_data
 def load_data():
